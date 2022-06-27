@@ -13,21 +13,16 @@
   <title>iota-web-claim</title>
 </head>
 <body>
- <div class="container-fluid border border-warning border-width-lg">
-   <h1>iota-web-claim</h1> 
-   <div class="row">
-     <div class="col">
-       <form action="https://poe.townway.com.tw/iota/message" method="post"> 
-         <label for="fname">API key:</label><br>
-         <input type="password" id="key" name="key" value="" placeholder="Input API key"><br><br>
-         <label for="lage">Value:</label><br>
-         <input type="text" id="message" name="message" value="" placeholder="Input claim for PoE"><br><br>
-         <button type="button" class="btn btn-primary" onclick="submit_data()">submit</button>
-       </form>
-     </div> <!-- col -->
-   </div> <!-- row -->
+ <h1>iota-web-claim</h1>
+ <form action="https://poe.townway.com.tw/iota/message" method="post"> 
+   <label for="fname">API key:</label><br>
+   <input type="password" id="key" name="key" value="" placeholder="Input API key"><br><br>
+   <label for="lage">Value:</label><br>
+   <input type="text" id="message" name="message" value="" placeholder="Input claim for PoE"><br><br>
+   <button type="button" class="btn btn-primary" onclick="submit_data()">submit</button>
+ </form> 
  
  <div id="responseText"></div>
- </div> <!-- container-fluid -->
+
 </body>
 </html>
