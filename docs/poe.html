@@ -13,13 +13,28 @@
   <title>iota-web-claim</title>
 </head>
 <body>
- <div class="container-fluid">
+   <div class="container-fluid">
    <div class="row">
      <div class="col-sm-6 mx-auto">
-       <p><a href="poe.html"><img style="border:5px double black;" src = "static/imgs/diagram.png"></a></p>
-       <p><a href="poe.html"> go to blockchain PoE/DID demonstration </a></p>
+       <h1>iota-web-claim</h1> 
+       <form action="https://poe.townway.com.tw/iota/message" method="post">
+         <!-- API key input -->
+         <div class="form-outline mb-4">
+           <label class="form-label" for="API key">API key:</label>
+           <input type="password" id="key" name="key" value="" placeholder="Input API key" class="form-control" />
+         </div>
+         <div class="form-outline mb-4">
+           <label class="form-label" for="Input claim for PoE">Input claim for PoE</label>
+           <input type="text" id="message" name="message" value="" placeholder="Input claim for PoE" class="form-control" />
+         </div>
+
+         <!-- Submit button -->
+           <button type="button" class="btn btn-primary btn-block" onclick="submit_data()">submit</button>
+       </form>
      </div> <!-- col -->
    </div> <!-- row -->
+ <br><br><br>
+ <div id="responseText"></div>
  </div> <!-- container-fluid -->
 </body>
 </html>
